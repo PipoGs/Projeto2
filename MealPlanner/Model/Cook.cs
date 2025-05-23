@@ -52,7 +52,7 @@ namespace MealPlanner.Model
                     break;
                 }
             }
-            
+
             if (selected == null)
                 return "Recipe not found.";
 
@@ -65,7 +65,7 @@ namespace MealPlanner.Model
                 {
                     if (have == 0)
                         return "Missing ingredient: " + ingredient.Name;
-         
+
                     return "Not enough " + ingredient.Name +
                            " (need " + need + ", have " + have + ")";
                 }
